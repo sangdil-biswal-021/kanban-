@@ -2,8 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   padding-inline: 50px;
-  /* justify-content: space-around; */
+  
+
 }
+
+
+
+
 .ticketsFirst {
   display: flex;
 }
@@ -11,6 +16,23 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+  .tickets {
+    padding-inline: 10px;
+    justify-content: space-around;
+  }
+  .ticketGroup {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline : 20px;
+  }
+}
+@media (max-width: 370px) {
+  .tickets {
+    padding-inline: 10px;
+  }
 }
 
 /* .groupHeader {
